@@ -19,7 +19,7 @@ onSubmit() {
   console.log('Product Name:', this.product.productName);
   console.log('Product Price:', this.product.productPrice);
   console.log('Product Quantity:', this.product.productQuantity);
-  this.service.add(this.product).subscribe((data: String)=>{
+  this.service.add(this.product).subscribe((data: String)=>{this.message=data
     
   },(error: any)=>{
     console.log(error);
