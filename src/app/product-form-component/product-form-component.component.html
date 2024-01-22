@@ -1,0 +1,19 @@
+<!-- product-form.component.html -->
+<div class="product-form-container">
+  <h2>Product Upload Form</h2>
+  <form (ngSubmit)="onSubmit()" class="product-form">
+    <div class="form-group">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" required [(ngModel)]="product.productName">
+    </div>
+    <div class="form-group">
+      <label for="productPrice">Product Price:</label>
+      <input type="number" id="productPrice" [(ngModel)]="product.productPrice" name="productPrice" required>
+    </div>
+    <div class="form-group">
+      <label for="productQuantity">Product Quantity:</label>
+      <input type="number" id="productQuantity" [(ngModel)]="product.productQuantity" name="productQuantity" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
